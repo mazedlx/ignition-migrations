@@ -1,11 +1,11 @@
 <?php
 
-namespace Mazedlx\Migrations;
+namespace Mazedlx\MigrationsTab;
 
 use Facade\Ignition\Ignition;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Mazedlx\Migrations\Http\Middleware\Authorize;
+use Mazedlx\MigrationsTab\Http\Middleware\Authorize;
 
 class TabServiceProvider extends ServiceProvider
 {

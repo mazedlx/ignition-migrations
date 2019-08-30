@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('endpoint', \Mazedlx\Migrations\Http\Controllers\TabController::class . '@index');
+Route::get('endpoint', \Mazedlx\MigrationsTab\Http\Controllers\TabController::class . '@index');

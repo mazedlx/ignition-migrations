@@ -1,6 +1,6 @@
 <?php
 
-namespace Mazedlx\Migrations\Http\Controllers;
+namespace Mazedlx\MigrationsTab\Http\Controllers;
 
 use Illuminate\Http\Request;
 

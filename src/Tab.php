@@ -1,6 +1,6 @@
 <?php
 
-namespace Mazedlx\Migrations;
+namespace Mazedlx\MigrationsTab;
 
 use Facade\Ignition\Tabs\Tab as BaseTab;
 
