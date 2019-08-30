@@ -1,0 +1,48 @@
+{
+    "name": "mazedlx/ignition-migrations",
+    "description": "An igintion package to show your migrations and their status.",
+    "keywords": [
+        "laravel",
+        "flare",
+        "ignition"
+    ],
+    "homepage": "https://github.com/mazedlx/ignition-migrations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Leo-Pernold",
+            "email": "mazedlx@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "facade/ignition": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mazedlx\\Migrations\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mazedlx\\Migrations\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mazedlx\\Migrations\\TabServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
