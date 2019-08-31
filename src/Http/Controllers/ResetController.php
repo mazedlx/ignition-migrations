@@ -13,6 +13,7 @@ class ResetController
         $output = new BufferedOutput();
 
         Artisan::call('migrate:reset', [], $output);
+        Artisan::call('migrate:status', [], $output);
 
         return $output->fetch();
     }
