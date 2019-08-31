@@ -1,16 +1,15 @@
 <?php
 namespace Facade\IgnitionTinkerTab\Tests;
 
+use Mazedlx\MigrationsTab\MigrationsTab;
 use PHPUnit\Framework\TestCase;
-use Mazedlx\MigrationsTab;
-use Mazedlx\MigrationsTab\Tab;
 
 class MigrationsTabTest extends TestCase
 {
     /** @test */
     public function it_can_return_the_tab_name()
     {
-        $tab = new Tab;
+        $tab = new MigrationsTab;
         $this->assertEquals('Migrations', $tab->name());
     }
 }
