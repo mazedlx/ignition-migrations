@@ -1,8 +1,9 @@
 # An igintion package to show your migrations and their status.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mazedlx/ignition-migrations.svg?style=flat-square)](https://packagist.org/packages/mazedlx/ignition-migrations)
+[![Latest Version on Packagist](https://img.shields.io/github/v/release/mazedlx/ignition-migrations?label=packagist)](https://packagist.org/packages/mazedlx/ignition-migrations)
 [![Build Status](https://img.shields.io/travis/mazedlx/ignition-migrations/master.svg?style=flat-square)](https://travis-ci.org/mazedlx/ignition-migrations)
 [![Total Downloads](https://img.shields.io/packagist/dt/mazedlx/ignition-migrations.svg?style=flat-square)](https://packagist.org/packages/mazedlx/ignition-migrations)
+[![License](https://img.shields.io/github/license/mazedlx/ignition-migrations)](https://img.shields.io/github/license/mazedlx/ignition-migrations)
 
 All your migrations at a glance.
 
