@@ -5,7 +5,6 @@ namespace Mazedlx\MigrationsTab;
 use Facade\Ignition\Ignition;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Mazedlx\MigrationsTab\Http\Middleware\Authorize;
 
 class TabServiceProvider extends ServiceProvider
 {
@@ -34,7 +33,7 @@ class TabServiceProvider extends ServiceProvider
         }
 
         Route::prefix('ignition-vendor/mazedlx/ignition-migrations')
-                ->group(__DIR__.'/../routes/api.php');
+                ->group(__DIR__ . '/../routes/api.php');
     }
 
     /**

@@ -20,7 +20,7 @@ class MigrationsTab extends Tab
 
     public function registerAssets()
     {
-        $this->script('ignition-migrations', __DIR__.'/../dist/js/tab.js');
+        $this->script('ignition-migrations', __DIR__ . '/../dist/js/tab.js');
     }
 
     public function meta(): array

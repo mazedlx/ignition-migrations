@@ -2,6 +2,6 @@
 
 All notable changes to `ignition-migrations` will be documented in this file
 
-## 1.0.0 - 2018-XX-XX
+## 0.0.1 - 2019-08-31
 
-- initial release
+-   initial release

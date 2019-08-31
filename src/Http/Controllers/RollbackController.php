@@ -2,7 +2,6 @@
 
 namespace Mazedlx\MigrationsTab\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Symfony\Component\Console\Output\BufferedOutput;
 

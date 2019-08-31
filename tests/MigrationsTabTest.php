@@ -1,4 +1,5 @@
 <?php
+
 namespace Facade\IgnitionTinkerTab\Tests;
 
 use Mazedlx\MigrationsTab\MigrationsTab;
