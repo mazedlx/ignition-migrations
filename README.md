@@ -5,9 +5,9 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/mazedlx/ignition-migrations.svg?style=flat-square)](https://scrutinizer-ci.com/g/mazedlx/ignition-migrations)
 [![Total Downloads](https://img.shields.io/packagist/dt/mazedlx/ignition-migrations.svg?style=flat-square)](https://packagist.org/packages/mazedlx/ignition-migrations)
 
-This is where your description should go. Try and limit it to a paragraph or two.
+All your migrations at a glance.
 
-Add a screenshot of the tab here.
+[![Screenshot](https://raw.githubusercontent.com/mazedlx/ignition-migrations/master/screenshot.png)
 
 ## Installation
 
@@ -33,7 +33,7 @@ public function boot()
 
 ## Usage
 
-Click on the "Migrations" tab on your Ignition screen to see the tool provided by this package.
+Click on the "Migrations" tab on your Ignition screen to see all your mgirations and call various `php artisan migrate` commands right from your browser.
 
 ### Testing
 
