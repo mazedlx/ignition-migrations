@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('endpoint', \Mazedlx\MigrationsTab\Http\Controllers\TabController::class . '@index');
+Route::post('status', \Mazedlx\MigrationsTab\Http\Controllers\StatusController::class);
+Route::post('migrate', \Mazedlx\MigrationsTab\Http\Controllers\MigrateController::class);
+Route::post('rollback', \Mazedlx\MigrationsTab\Http\Controllers\RollbackController::class);
+Route::post('fresh', \Mazedlx\MigrationsTab\Http\Controllers\FreshController::class);
+Route::post('reset', \Mazedlx\MigrationsTab\Http\Controllers\ResetController::class);

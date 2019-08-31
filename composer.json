@@ -25,18 +25,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Mazedlx\\Migrations\\": "src/"
+            "Mazedlx\\MigrationsTab\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mazedlx\\Migrations\\Tests\\": "tests"
+            "Mazedlx\\MigrationsTab\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Mazedlx\\Migrations\\TabServiceProvider"
+                "Mazedlx\\MigrationsTab\\TabServiceProvider"
             ]
         }
     },

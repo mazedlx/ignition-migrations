@@ -4,10 +4,6 @@ namespace Mazedlx\MigrationsTab\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TabController
+class TestCase
 {
-    public function index()
-    {
-        return 'Hello world!';
-    }
 }
