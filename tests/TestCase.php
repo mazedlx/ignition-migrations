@@ -1,9 +1,16 @@
 <?php
+namespace Mazedlx\MigrationsTab\Tests;
 
-namespace Mazedlx\MigrationsTab\Http\Controllers;
+use Illuminate\Support\Facades\Route;
+use Orchestra\Testbench\TestCase as Orchestra;
+use Mazedlx\MigrationsTab\TabServiceProvider;
 
-use Illuminate\Http\Request;
-
-class TestCase
+abstract class TestCase extends Orchestra
 {
+    protected function getPackageProviders($app)
+    {
+        return [
+            TabServiceProvider::class,
+        ];
+    }
 }

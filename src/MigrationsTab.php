@@ -2,14 +2,11 @@
 
 namespace Mazedlx\MigrationsTab;
 
-use Facade\Ignition\Tabs\Tab as BaseTab;
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Support\Arr;
+use Facade\Ignition\Tabs\Tab;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\DB;
 use Symfony\Component\Console\Output\BufferedOutput;
 
-class Tab extends BaseTab
+class MigrationsTab extends Tab
 {
     public function name(): string
     {

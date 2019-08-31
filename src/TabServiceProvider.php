@@ -20,7 +20,7 @@ class TabServiceProvider extends ServiceProvider
             $this->routes();
         });
 
-        Ignition::tab(app(Tab::class));
+        Ignition::tab(app(MigrationsTab::class));
     }
 
     protected function routes()
