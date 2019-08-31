@@ -20,16 +20,15 @@ composer require mazedlx/ignition-migrations
 Then add the Migrations tab to your Ignition tabs e.g. in your `AppServiceProvider`:
 
 ```php
-    ...
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        Ignition::tab(new MigrationsTab);
-    }
+/**
+ * Bootstrap any application services.
+ *
+ * @return void
+    */
+public function boot()
+{
+    Ignition::tab(new MigrationsTab);
+}
 ```
 
 ## Usage
