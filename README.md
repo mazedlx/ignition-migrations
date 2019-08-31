@@ -17,6 +17,21 @@ You can install the package in to a Laravel app that uses [Ignition](https://fla
 composer require mazedlx/ignition-migrations
 ```
 
+Then add the Migrations tab to your Ignition tabs e.g. in your `AppServiceProvider`:
+
+```php
+    ...
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        Ignition::tab(new MigrationsTab);
+    }
+```
+
 ## Usage
 
 Click on the "Migrations" tab on your Ignition screen to see the tool provided by this package.
