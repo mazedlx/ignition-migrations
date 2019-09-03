@@ -9,8 +9,6 @@ All your migrations at a glance.
 
 ![Screenshot](https://raw.githubusercontent.com/mazedlx/ignition-migrations/master/screenshot001.png)
 
-![Screenshot](https://raw.githubusercontent.com/mazedlx/ignition-migrations/master/screenshot002.png)
-
 ## Installation
 
 You can install the package in to a Laravel app that uses [Ignition](https://flareapp.io) via composer:
@@ -54,6 +52,10 @@ return [
     'view' => 'raw',
 ];
 ```
+
+Change `view` to `html` and the tab's output will look like:
+
+![Screenshot](https://raw.githubusercontent.com/mazedlx/ignition-migrations/master/screenshot002.png)
 
 ## Usage
 
