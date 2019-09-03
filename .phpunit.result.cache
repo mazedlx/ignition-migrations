@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":224:{a:2:{s:7:"defects";a:1:{s:76:"Facade\IgnitionTinkerTab\Tests\MigrationsTabTest::it_can_return_the_tab_name";i:4;}s:5:"times";a:1:{s:76:"Facade\IgnitionTinkerTab\Tests\MigrationsTabTest::it_can_return_the_tab_name";d:0.005;}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":224:{a:2:{s:7:"defects";a:1:{s:76:"Facade\IgnitionTinkerTab\Tests\MigrationsTabTest::it_can_return_the_tab_name";i:4;}s:5:"times";a:1:{s:76:"Facade\IgnitionTinkerTab\Tests\MigrationsTabTest::it_can_return_the_tab_name";d:0.012;}}}
