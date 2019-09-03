@@ -140,7 +140,11 @@ export default {
     }
   },
 
-  props: ["meta"]
+  props: {
+    meta: {
+      type: Object
+    }
+  }
 };
 </script>
 
