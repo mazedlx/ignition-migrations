@@ -7,7 +7,9 @@
 
 All your migrations at a glance.
 
-![Screenshot](https://raw.githubusercontent.com/mazedlx/ignition-migrations/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/mazedlx/ignition-migrations/master/screenshot001.png)
+
+![Screenshot](https://raw.githubusercontent.com/mazedlx/ignition-migrations/master/screenshot002.png)
 
 ## Installation
 
