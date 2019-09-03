@@ -30,6 +30,14 @@ public function boot()
 }
 ```
 
+If you want to change the output style you can
+
+```bash
+$ php artisan vendor:publish --provider="Mazedlx\MigrationsTab\TabServiceProvider"
+```
+
+which will create `ignition-migrations.php` in your `config` folder.
+
 ## Usage
 
 Click on the "Migrations" tab on your Ignition screen to see all your mgirations and call various `php artisan migrate` commands right from your browser.

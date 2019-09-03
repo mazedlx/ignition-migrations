@@ -1,12 +1,10 @@
 <template>
   <div class="tab-content">
     <div class="layout-col pb-4">
-      <div class="px-4">
-        <div class="bg-gray-900 text-white px-3 py-3 mb-2 rounded-b-lg font-mono">
-          <div v-show="error" class="whitespace-normal text-red-500">{{ error }}</div>
-          <div class="whitespace-pre">{{ migrationStatus }}</div>
-        </div>
+      <raw-output v-show="view==='raw'" :error="error" :migrationStatus="migrationStatus"></raw-output>
+      <html-output v-show="view==='html'" :error="error" :migrationStatus="migrationStatus"></html-output>
 
+      <div class="px-4">
         <div class="flex justify-between">
           <button
             type="button"
@@ -56,72 +54,81 @@
 <script>
 import { groupBy } from "lodash";
 import axios from "axios";
+import RawOutput from "./RawOutput.vue";
+import HtmlOutput from "./HtmlOutput.vue";
 
 export default {
+  components: {
+    HtmlOutput,
+    RawOutput
+  },
+
   data() {
     return {
       error: "",
-      migrationStatus: this.meta.migrationStatus
+      migrationStatus: this.meta.migrationStatus,
+      view: this.meta.view
     };
   },
 
   methods: {
-    status() {
-      axios
-        .post("/ignition-vendor/mazedlx/ignition-migrations/status")
-        .then(({ data }) => {
-          this.migrationStatus = data;
-        })
-        .catch(errors => {
-          this.setError(errors.response.data.message);
-        });
-    },
-    migrate() {
-      this.clearError();
-      axios
-        .post("/ignition-vendor/mazedlx/ignition-migrations/migrate")
-        .then(({ data }) => {
-          this.migrationStatus = data;
-        })
-        .catch(errors => {
-          this.setError(errors.response.data.message);
-        });
+    async status() {
+      try {
+        const { data } = await axios.post(
+          "/ignition-vendor/mazedlx/ignition-migrations/status"
+        );
+        this.migrationStatus = data;
+      } catch (errors) {
+        this.setError(errors.response.data.message);
+      }
     },
 
-    rollback() {
+    async migrate() {
       this.clearError();
-      axios
-        .post("/ignition-vendor/mazedlx/ignition-migrations/rollback")
-        .then(({ data }) => {
-          this.migrationStatus = data;
-        })
-        .catch(errors => {
-          this.setError(errors.response.data.message);
-        });
+      try {
+        const { data } = await axios.post(
+          "/ignition-vendor/mazedlx/ignition-migrations/migrate"
+        );
+        this.migrationStatus = data;
+      } catch (errors) {
+        this.setError(errors.response.data.message);
+      }
     },
 
-    reset() {
+    async rollback() {
       this.clearError();
-      axios
-        .post("/ignition-vendor/mazedlx/ignition-migrations/reset")
-        .then(({ data }) => {
-          this.migrationStatus = data;
-        })
-        .catch(errors => {
-          this.setError(errors.response.data.message);
-        });
+      try {
+        const { data } = await axios.post(
+          "/ignition-vendor/mazedlx/ignition-migrations/rollback"
+        );
+        this.migrationStatus = data;
+      } catch (errors) {
+        this.setError(errors.response.data.message);
+      }
     },
 
-    fresh() {
+    async reset() {
       this.clearError();
-      axios
-        .post("/ignition-vendor/mazedlx/ignition-migrations/fresh")
-        .then(({ data }) => {
-          this.migrationStatus = data;
-        })
-        .catch(errors => {
-          this.setError(errors.response.data.message);
-        });
+      try {
+        const { data } = await axios.post(
+          "/ignition-vendor/mazedlx/ignition-migrations/reset"
+        );
+        this.migrationStatus = data;
+      } catch (errors) {
+        this.setError(errors.response.data.message);
+      }
+    },
+
+    async fresh() {
+      this.clearError();
+      try {
+        const { data } = await axios.post(
+          "/ignition-vendor/mazedlx/ignition-migrations/fresh"
+        );
+        this.migrationStatus = data;
+      } catch (errors) {
+        this.setError(errors.response.data.message);
+      }
     },
 
     setError(error) {

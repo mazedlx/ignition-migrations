@@ -19,6 +19,10 @@ class TabServiceProvider extends ServiceProvider
             $this->routes();
         });
 
+        $this->publishes([
+            __DIR__ . '/../config/ignition-migrations.php' => config_path('ignition-migrations.php'),
+        ]);
+
         Ignition::tab(app(MigrationsTab::class));
     }
 
