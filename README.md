@@ -31,13 +31,27 @@ public function boot()
 }
 ```
 
-If you want to change the output style you can
+If you want to change the output style you can run
 
 ```bash
 $ php artisan vendor:publish --provider="Mazedlx\MigrationsTab\TabServiceProvider"
 ```
 
-which will create `ignition-migrations.php` in your `config` folder.
+which will create `ignition-migrations.php` in your `config` folder:
+
+```php
+<?php
+
+return [
+    /*
+     * You can choose if you want the output to be
+     * raw, like it would look in your terminal, or to be
+     * html, which will display a nice HTML table.
+     */
+
+    'view' => 'raw',
+];
+```
 
 ## Usage
 
