@@ -1,4 +1,4 @@
-# An igintion package to show your migrations and their status.
+# An ignition package to show your migrations and their status.
 
 [![Latest Version on Packagist](https://img.shields.io/github/v/release/mazedlx/ignition-migrations?label=packagist)](https://packagist.org/packages/mazedlx/ignition-migrations)
 [![Build Status](https://img.shields.io/travis/mazedlx/ignition-migrations/master.svg?style=flat-square)](https://travis-ci.org/mazedlx/ignition-migrations)
