@@ -1,0 +1,17 @@
+{
+    "extends": [
+        "plugin:vue/recommended"
+    ],
+    "rules": {
+        "no-console": "warn",
+        "array-bracket-newline": "error",
+        "indent": [
+            "error",
+            2
+        ],
+        "comma-dangle": [
+            2,
+            "always-multiline"
+        ]
+    }
+}

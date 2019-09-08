@@ -30,9 +30,9 @@ class MigrationsTab extends Tab
         Artisan::call('migrate:status', [], $output);
 
         return [
-            'view' => config('ignition-migrations.view', 'raw'),
-            'title' => $this->name(),
             'migrationStatus' => $output->fetch(),
+            'title' => $this->name(),
+            'view' => config('ignition-migrations.view', 'raw'),
         ];
     }
 }
