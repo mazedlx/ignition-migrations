@@ -20,7 +20,7 @@
         "facade/ignition": "^1.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.8",
+        "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
         "phpunit/phpunit": "^8.0"
     },
     "autoload": {
